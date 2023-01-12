@@ -1,0 +1,196 @@
+:root{
+    --sm: 12px;
+    --md: 16px;
+    --lg: 20px; 
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    font-family: Roboto,Arial,sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 10px;
+}
+a:hover{
+    text-decoration: underline;
+}
+header{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header nav .Nav-Right-section{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+li{
+    list-style: none;
+    padding: 8px;
+}
+.menu-icon{
+    width: 12px;
+    height: 12px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-icon a img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.menu-icon:hover{
+    border-radius: 50%;
+    background-color: #f2f2f2;
+}
+.user-icon a img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+main{
+    margin-top: 90px;
+    text-align: center;
+}
+main .main-logo{
+    display: flex;
+    width: 50%;
+    height: 92px;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+main .main-logo img{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+}
+main .main-input{
+    display: flex;
+    width: 530px;
+    margin: 28px auto 35px;
+    align-items: center;
+    justify-content: center;
+}
+main .main-input-container{
+    width: 100%;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+main .main-input input{
+    width: 450px;
+    height: 28px;
+    border: none;
+    outline: none;
+}
+main .main-input .search-icon{
+    width: 18px;
+    height: 18px;
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png');
+    background-size:contain ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main .main-input .micro-icon{
+    width: 18px;
+    height: 18px;
+    background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    background-size:contain ;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+main .main-buttons button{
+    width: 290px;
+    height: 36px;
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+main .main-buttons button:nth-child(2){
+    margin-left: 20px;
+}
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001 ;
+    color: #222;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 32px;
+    background:fixed;
+    background-color:#f2f2f2;
+    border-top: 1px solid #5f6368;
+}
+footer .Links-Left{
+    left: 10px;
+    position: absolute;
+}
+footer .Links-Rigth{
+    right: 10px;
+    position: absolute;
+}
+footer a {
+    padding: 4px;
+}
+@media (max-width: 725px) {
+    header nav {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    body main{
+        margin-top: 30px;
+    }
+    main .main-input{
+        width: 100%;
+    }
+    main .main-input-container{
+        width: 60%;
+    }
+    main .main-buttons button{
+        margin-top: 20px ;
+        margin-left: 0 !important ; 
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer .Links-Left{
+        bottom: 8px;
+    }
+    footer .Links-Rigth{
+        left: 10px;
+        position: absolute;
+        right: none;
+    }
+}
+
+@media (max-width: 355px) {
+    main .main-buttons button{
+        margin-top: 15px;
+        margin-right: 0;
+    }
+}
